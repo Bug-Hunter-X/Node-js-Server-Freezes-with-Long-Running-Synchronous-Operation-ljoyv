@@ -1,0 +1,3 @@
+# Node.js Server Freeze Bug
+
+This repository demonstrates a common Node.js server issue: freezing due to a long-running synchronous operation within the request handler.  The provided `server.js` file contains a simple HTTP server that performs a computationally intensive task before responding to the client. This blocks the event loop, preventing the server from handling other requests. The solution file (`serverSolution.js`) shows how to fix this using asynchronous operations.
